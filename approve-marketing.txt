@@ -1,0 +1,11 @@
+Admin Login
+  Dashboard Page
+    View Open Marketing Instance
+      Request Send to Phone/Email
+        Approve
+          : (submit)
+        Deny
+          Fill In Deny Notes
+            : (submit)
+
+[submit] Submit

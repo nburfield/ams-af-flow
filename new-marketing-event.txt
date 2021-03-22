@@ -1,0 +1,36 @@
+Business Login
+  Dashboard Page
+   view: (userset)
+   view: (marketing)
+   view: (instance)
+
+[userset] Recipient User Set
+  Create New User Set
+    file: Upload User Recipient File
+      Identify File Headers to Allowed Headers
+        : (usersetconfirm)
+    pivot: Build New Set From Current Sets
+      : (usersetconfirm)
+
+[usersetconfirm] Confirm User Set
+  Adjust Bad Data
+    : (dp)
+
+[marketing] Marketing Campaign
+  sms: SMS/MMS Event
+    : (mccreate)
+  email: Email Event
+    : (mccreate)
+[mccreate] Add Content
+  Add Files
+    : (dp)
+
+[instance] Marketing Instance
+  Select Marketing Campaign
+    Select User Set
+      Select Time & Timezone
+        Approve (Business & Admin)
+          Purchase Instance
+            : (dp)
+
+[dp] Dashboard Page
